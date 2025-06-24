@@ -1,12 +1,12 @@
-🎧 Emotion Classification from Speech - Deep Learning Project
+Emotion Classification from Speech - Deep Learning Project
 
 This repository contains an end-to-end pipeline for classifying emotions from speech audio using deep learning. It combines robust audio feature extraction, data augmentation, and a custom CNN-BiLSTM-Attention model to accurately identify emotional states conveyed in speech.
 
-📌 Project Objective
+Project Objective
 
 To build a high-performance emotion classification system using audio data. The pipeline leverages audio preprocessing, augmentation, deep learning models, and a hosted Streamlit web app for real-time emotion detection.
 
-📁 Dataset
+Dataset
 
 We used the RAVDESS dataset, split across two folders:
 
@@ -24,7 +24,7 @@ Emotion Mapping:
 07 - disgust
 08 - surprised
 
-🔄 Data Preprocessing
+Data Preprocessing
 
 Log-Mel Spectrograms were extracted from audio (128 x 130 shape).
 Applied Data Augmentation:
@@ -36,7 +36,7 @@ Applied Data Augmentation:
 Combined original + augmented data to increase diversity.
 Features were padded or truncated to ensure consistent dimensions.
 
-🧠 Model Architecture
+Model Architecture
 
 Custom deep learning pipeline:
 - 3× Conv1D blocks with Layer Normalization, LeakyReLU, MaxPooling, Dropout
@@ -52,14 +52,14 @@ Training Strategy:
 - Oversampling for underrepresented classes (e.g., sad, angry)
 - Callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 
-📈 Evaluation Metrics
+ Evaluation Metrics
 
 - Achieved strong performance on validation set:
 - F1 Score: > 82%
 - Overall Accuracy: > 83%
 - All Class-wise Accuracies: > 80%
 
-📊 Plotted Confusion Matrix and Classification Report to validate.
+Plotted Confusion Matrix and Classification Report to validate.
 
 🔍 Confusion Matrix Observations:
 
@@ -68,7 +68,7 @@ Training Strategy:
 - Disgust had slightly lower accuracy compared to others, likely due to limited examples in dataset.
 - Despite these, the classifier meets all required thresholds for F1 and per-class accuracy.
 
-💻 Streamlit Web App
+Streamlit Web App
 
 A lightweight web app was built using Streamlit:
 
@@ -77,7 +77,7 @@ A lightweight web app was built using Streamlit:
 - Shows result, confidence, and class-wise probabilities
 - Hosted using Streamlit Cloud
 
-📁 File Structure
+File Structure
 .
 ├── app.py                  # Streamlit app and prediction
 ├── final_emotion_model.h5 # Trained DL model
@@ -88,7 +88,7 @@ A lightweight web app was built using Streamlit:
 
 A short 2-minute demo video showing the web app usage is available in the repository or shared via Google Drive.
 
-📦 Installation & Usage
+Installation & Usage
 
 # Clone the repo
 https://github.com/yourusername/emotion-classifier
