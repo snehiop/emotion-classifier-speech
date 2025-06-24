@@ -1,4 +1,6 @@
-streamlit
-librosa
-numpy
-tensorflow
+streamlit==1.35.0
+numpy==1.23.5
+tensorflow==2.11.0
+librosa==0.10.0.post2
+scikit-learn==1.2.2
+matplotlib==3.7.1
