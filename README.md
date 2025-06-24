@@ -61,7 +61,7 @@ Training Strategy:
 
 Plotted Confusion Matrix and Classification Report to validate.
 
-🔍 Confusion Matrix Observations:
+Confusion Matrix Observations:
 
 - Happy and Sad classes had minor misclassifications with Neutral and Fearful respectively.
 - Neutral samples were sometimes misclassified as Calm or Sad.
@@ -84,14 +84,14 @@ File Structure
 ├── requirements.txt       # Dependencies
 ├── README.md              # This file
 
-🚀 Demo Video
+Demo Video
 
 A short 2-minute demo video showing the web app usage is available in the repository or shared via Google Drive.
 
 Installation & Usage
 
 # Clone the repo
-https://github.com/yourusername/emotion-classifier
+https://github.com/snehiop/emotion-classifier
 cd emotion-classifier
 
 # Install dependencies
@@ -100,7 +100,7 @@ pip install -r requirements.txt
 # Run Streamlit app
 streamlit run app.py
 
-📝 License
+License
 
 This project is under the MIT License. Attribution required when reused.
 
